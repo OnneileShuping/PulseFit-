@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bottom Navigation menu definition for PulseFit screens -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_log"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Log" />
+    <item
+        android:id="@+id/nav_squads"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Squads" />
+    <item
+        android:id="@+id/nav_progress"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Progress" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Profile" />
+</menu>

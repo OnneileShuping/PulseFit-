@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pulsefit">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PulseFit"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Splash Screen (App Launcher) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Authentication Screens -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- Screen 1: Dashboard / Main Overview -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Screen 2: Workout / Activity Details -->
+        <activity
+            android:name=".WorkoutDetailActivity"
+            android:exported="false" />
+
+        <!-- Screen 3: User Profile & Goals -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <!-- Screen 4: Activity Logger -->
+        <activity
+            android:name=".LogActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
