@@ -72,16 +72,17 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_progress -> {
-                    Log.d(TAG, "Progress tab selected")
-                    Toast.makeText(this, "Achievements & Progress", Toast.LENGTH_SHORT).show()
+                    Log.d(TAG, "Progress tab selected - Navigating to Screen 5")
+                    startActivity(Intent(this, ProgressActivity::class.java))
+                    true
+                }
+                R.id.nav_profile -> {
+                    Log.d(TAG, "Profile tab selected - Navigating to Screen 8")
+                    startActivity(Intent(this, ProfileActivity::class.java))
                     true
                 }
 
-                R.id.nav_profile -> {
-                    Log.d(TAG, "Profile tab selected")
-                    Toast.makeText(this, "Profile Settings", Toast.LENGTH_SHORT).show()
-                    true
-                }
+
 
                 else -> false
             }

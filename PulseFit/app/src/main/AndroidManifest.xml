@@ -45,6 +45,11 @@
             android:name=".LogActivity"
             android:exported="false" />
 
+        <!-- Screen 5: Progress & Achievements -->
+        <activity
+            android:name=".ProgressActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
