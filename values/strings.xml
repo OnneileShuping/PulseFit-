@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PulseFit</string>
+
+    <!-- Auth -->
+    <string name="login_welcome">Welcome back, champ.</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">Log In</string>
+    <string name="login_or">OR</string>
+    <string name="login_google">Continue with Google</string>
+    <string name="login_forgot">Forgot password?</string>
+    <string name="login_no_account">Don\'t have an account?</string>
+    <string name="login_register">Register</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_log">Log</string>
+    <string name="nav_squads">Squads</string>
+    <string name="nav_progress">Progress</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Profile / Settings -->
+    <string name="profile_title">Profile</string>
+    <string name="pref_header">PREFERENCES</string>
+    <string name="pref_units">Units</string>
+    <string name="pref_theme">Dark Theme</string>
+    <string name="pref_language">Language</string>
+    <string name="pref_notifications">Notifications</string>
+
+    <string name="personal_header">PERSONAL INFORMATION</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="personal_email">Email Address</string>
+
+    <string name="account_header">ACCOUNT</string>
+    <string name="account_change_password">Change Password</string>
+    <string name="account_export">Export Data</string>
+    <string name="account_terms">Terms &amp; Conditions</string>
+    <string name="account_delete">Delete Account</string>
+    <string name="account_logout">Log Out</string>
+
+    <!-- Language dialog -->
+    <string name="language_title">Choose Language</string>
+    <string name="language_cancel">Cancel</string>
+</resources>

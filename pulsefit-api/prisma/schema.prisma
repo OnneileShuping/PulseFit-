@@ -1,0 +1,86 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(uuid())
+  email         String    @unique
+  username      String
+  passwordHash  String
+  xp            Int       @default(0)
+  tier          String    @default("Bronze")
+  createdAt     DateTime  @default(now())
+
+  settings      UserSettings?
+  activities    Activity[]
+  userBadges    UserBadge[]
+  ownedSquads   Squad[]      @relation("Owner")
+  squadMembers  SquadMember[]
+}
+
+model UserSettings {
+  id                    String   @id @default(uuid())
+  userId                String   @unique
+  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  units                 String   @default("Metric")
+  theme                 String   @default("Light")
+  language              String   @default("English")
+  notificationsEnabled  Boolean  @default(true)
+}
+
+model Activity {
+  id              String    @id @default(uuid())
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type            String
+  durationSeconds Int
+  distanceKm      Float
+  calories        Int
+  notes           String    @default("")
+  timestamp       DateTime
+  syncStatus      String    @default("synced")
+  createdAt       DateTime  @default(now())
+}
+
+model Badge {
+  id          String      @id @default(uuid())
+  name        String      @unique
+  description String
+  criteria    String
+  userBadges  UserBadge[]
+}
+
+model UserBadge {
+  id       String    @id @default(uuid())
+  userId   String
+  user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  badgeId  String
+  badge    Badge     @relation(fields: [badgeId], references: [id])
+  earnedAt DateTime  @default(now())
+}
+
+model Squad {
+  id           String        @id @default(uuid())
+  name         String
+  maxMembers   Int           @default(6)
+  ownerId      String
+  owner        User          @relation("Owner", fields: [ownerId], references: [id])
+  members      SquadMember[]
+  createdAt    DateTime      @default(now())
+}
+
+model SquadMember {
+  id        String   @id @default(uuid())
+  squadId   String
+  userId    String
+  squad     Squad    @relation(fields: [squadId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  joinedAt  DateTime @default(now())
+
+  @@unique([squadId, userId])
+}
