@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_change_password">Fetola lefoko la sephiri</string>
+    <string name="account_delete">Phimola akhaonto</string>
+    <string name="account_export">Ntsha datha</string>
+    <string name="account_header">AKHAONTO</string>
+    <string name="account_logout">Tswa</string>
+    <string name="account_terms">Melawana le dipeelo</string>
+    <string name="app_name">PulseFit</string>
+    <string name="language_cancel">Khansela</string>
+    <string name="language_title">Tlhopha puo</string>
+    <string name="login_button">Tsena</string>
+    <string name="login_email">Imeile</string>
+    <string name="login_forgot">O lebetse lefoko la sephiri?</string>
+    <string name="login_google">Tswelela ka Google</string>
+    <string name="login_no_account">Ga o na akhaonto?</string>
+    <string name="login_or">KGOTSA</string>
+    <string name="login_password">Lefoko la sephiri</string>
+    <string name="login_register">Ikwadise</string>
+    <string name="login_welcome">O amogelesegile gape, mmampodi.</string>
+    <string name="nav_home">Gae</string>
+    <string name="nav_log">Rekota</string>
+    <string name="nav_profile">Porofaele</string>
+    <string name="nav_progress">Tswelopele</string>
+    <string name="nav_squads">Ditlhopha</string>
+    <string name="personal_details">Dintlha tsa botho</string>
+    <string name="personal_email">Aterese ya imeile</string>
+    <string name="personal_header">TSHEDIMOSETSO YA MOTHO</string>
+    <string name="pref_header">DIKGOThagISO</string>
+    <string name="pref_language">Puo</string>
+    <string name="pref_notifications">Dikitsiso</string>
+    <string name="pref_theme">Themo e Ntsho</string>
+    <string name="pref_units">Diyuniti</string>
+    <string name="profile_title">Porofaele</string>
+</resources>
