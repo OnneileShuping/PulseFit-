@@ -192,7 +192,8 @@ PulseFit follows **MVVM (Model-View-ViewModel)** with a **Repository pattern** f
 
 ---
 
-## 🧪 Testing
+## Youtube link
+https://youtube.com/shorts/9sJyFXCdrxQ?si=6vVcoorsC-px4eon
 
 PulseFit includes unit tests for domain engines, ViewModels, and UI components.
 
