@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PulseFit</string>
+
+    <!-- Auth -->
+    <string name="login_welcome">Welkom terug, kampioen.</string>
+    <string name="login_email">E-pos</string>
+    <string name="login_password">Wagwoord</string>
+    <string name="login_button">Meld aan</string>
+    <string name="login_or">OF</string>
+    <string name="login_google">Gaan voort met Google</string>
+    <string name="login_forgot">Wagwoord vergeet?</string>
+    <string name="login_no_account">Het jy nie \'n rekening nie?</string>
+    <string name="login_register">Registreer</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_home">Tuis</string>
+    <string name="nav_log">Teken aan</string>
+    <string name="nav_squads">Spanne</string>
+    <string name="nav_progress">Vordering</string>
+    <string name="nav_profile">Profiel</string>
+
+    <!-- Profile / Settings -->
+    <string name="profile_title">Profiel</string>
+    <string name="pref_header">VOORKEURE</string>
+    <string name="pref_units">Eenhede</string>
+    <string name="pref_theme">Donker Tema</string>
+    <string name="pref_language">Taal</string>
+    <string name="pref_notifications">Kennisgewings</string>
+
+    <string name="personal_header">PERSOONLIKE INLIGTING</string>
+    <string name="personal_details">Persoonlike besonderhede</string>
+    <string name="personal_email">E-posadres</string>
+
+    <string name="account_header">REKENING</string>
+    <string name="account_change_password">Verander wagwoord</string>
+    <string name="account_export">Voer data uit</string>
+    <string name="account_terms">Terme en voorwaardes</string>
+    <string name="account_delete">Verwyder rekening</string>
+    <string name="account_logout">Meld af</string>
+
+    <!-- Language dialog -->
+    <string name="language_title">Kies taal</string>
+    <string name="language_cancel">Kanselleer</string>
+</resources>

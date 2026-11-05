@@ -1,0 +1,8 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.PulseFit" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/pulse_bg</item>
+        <item name="android:statusBarColor">@color/pulse_bg</item>
+        <item name="android:navigationBarColor">@color/pulse_bg</item>
+    </style>
+</resources>
